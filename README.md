@@ -12,6 +12,20 @@
 
 [![React.js](https://img.shields.io/static/v1?label=&message=React.js&color=61DAFB&logo=React&logoColor=61DAFB&labelColor=2F333A)](https://es.reactjs.org/)<!-- React.js -->
 
+- `node.js`
+- `NPM 5.2+`
+
+## instalation
+
+- install [node.js](https://nodejs.org/en/)
+- install [npm](https://www.npmjs.com/)
+
+### Using docker
+
+``docker build -t my-nodejs-app .``
+``docker run --publish 8000:8000 -d -it --rm --name node-app node``
+``docker exec -it node-app bash``
+
 ## fundations
 
 *Principles* - React.js
