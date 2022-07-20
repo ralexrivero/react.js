@@ -5,7 +5,7 @@ const Page2 = ({onRouteChange}) =>
     <div className='App'>
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1>Welcome to page 2</h1>
+            <h1>Welcome to page 2!!</h1>
         </header>
         <button onClick={() => onRouteChange('page1')}>Page1</button>
         <button className='disabled'>Page2</button>
