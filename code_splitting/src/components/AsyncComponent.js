@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+/* import React, {Component} from 'react';
 
 export default function asyncComponent(importComponent) {
     class AsyncComponent extends Component {
@@ -23,4 +23,4 @@ export default function asyncComponent(importComponent) {
     }
 
     return AsyncComponent;
-}
+} */
