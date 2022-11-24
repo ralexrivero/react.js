@@ -14,6 +14,8 @@
 
 - `node.js`
 - `NPM 5.2+`
+- `babel`
+- `JSX syntax`
 
 ## instalation
 
