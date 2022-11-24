@@ -20,9 +20,15 @@
             <h1>{props.name}'s Kitchen</h1>
             );
         }
-        function Section(props) {
+        function Main(props) {
             return (
-            <p>We serve the most {props.adjective} food around.</p>
+            <section>
+                <ul>
+                    {props.dishes.map((dish) => (
+                        <li>{dish}</li>
+                    ))}
+                </ul>
+            </section>
             );
         }
         function Footer(props) {
@@ -32,11 +38,21 @@
                 </footer>
             );
         }
+
+        const dishes = [
+            "Black Bean Soup",
+            "Macaroni and Cheese",
+            "Salmon and Potates"
+        ];
+
         function App() {
             return (
                 <div>
                     <Header name="Ronald" />
-                    <Section adjective="amazing" />
+                    <Main
+                        adjective="amazing"
+                        dishes={dishes}
+                        />
                     <Footer year={new Date().getFullYear()} />
                 </div>
             );
