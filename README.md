@@ -16,6 +16,7 @@
 - `NPM 5.2+`
 - `babel`
 - `JSX syntax`
+- `Firefox`
 
 ## instalation
 
@@ -26,15 +27,30 @@
 
 ### Using docker
 
-``docker build -t my-nodejs-app .``
-``docker run -v /mnt/code/repos/react.js:/react.js --publish 3000:8000 -d -it --rm --user node --name node-app node:16``
-``docker exec -it --user root node-app bash``
+#### docker file
+
+```Dockerfile
+FROM node:18-alpine
+
+RUN npm install --location=global vim
+RUN npm install --location=global npm
+RUN npm install --location=global semistandard -y
+
+```
+
+- `docker build -t node-alp:1.0 .`
+- `docker run -d -it --rm -p 3000:3000 -v /home/ralex/code:/code --user node --name node-alp-0 node-alp:1.0`
+- `docker exec -it --user root node-alp-0 sh`
 
 ### create React app
 
-`npx create-react-app monster-rolodex`
-`cd my-app`
-`npm start`
+> This process will install react, react-dom and react-scripts
+
+- `node -v`
+- `npx create-react-app my-app`
+- `cd my-app`
+- `npm start`
+- open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## fundations
 

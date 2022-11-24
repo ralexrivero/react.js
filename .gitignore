@@ -1,5 +1,9 @@
 # ex files folder
 Ex_Files_React_js_EssT/
+
+# node modules
+node_modules/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
