@@ -45,12 +45,16 @@ RUN npm install --location=global semistandard -y
 ### create React app
 
 > This process will install react, react-dom and react-scripts
+>
+> React will create react componenets, react-dom is is how add them to the page, and react scripts is how we handle the bundling.
 
 - `node -v`
 - `npx create-react-app my-app`
 - `cd my-app`
 - `npm start`
 - open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+> if download the code from github, you need to install the dependencies with `npm install`
 
 ## fundations
 
@@ -83,6 +87,8 @@ RUN npm install --location=global semistandard -y
 let name = 'John'
 {name.toLowerCase()}
 ```
+
+
 
 > Author
 <!-- twitter -->
