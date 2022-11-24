@@ -14,13 +14,18 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
-
+        let scared = "😱"
+        let dragon = "🐲"
+        let sparkles = "✨"
+        let name = "Ronald"
         ReactDOM.render(
             ReactDOM.render(
                 <ul>
-                    <li>😱</li>
-                    <li>✨</li>
-                    <li>🐲</li>
+                    <li>{scared}</li>
+                    <li>{dragon}</li>
+                    <li>{sparkles}</li>
+                    <li>{name.toUpperCase()}</li>
+                    <li>{name.length}</li>
                 </ul>,
                 document.getElementById("root")
             )
