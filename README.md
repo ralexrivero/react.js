@@ -119,6 +119,8 @@ useEffect(() => {
 - `useEffect(() => { console.log('render') }, [name])` is the function that will be executed when the component is rendered
 - `[name]` is the dependency array, if the state `name` changes, the function will be executed
 
+### dependecy array
+
 
 
 > Author
