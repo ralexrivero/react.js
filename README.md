@@ -88,6 +88,37 @@ let name = 'John'
 {name.toLowerCase()}
 ```
 
+## useState hook
+
+> useState is a hook that allows you to add state to functional components
+
+- `import React, { useState } from 'react'`
+
+```JSX
+const [name, setName] = useState('John')
+```
+
+- `name` is the state
+- `setName` is the function that allows you to change the state
+- `useState` is the hook
+- `useState('John')` is the initial value of the state
+
+## useEffect hook
+
+> useEffect is a hook that allows you to add side effects to functional components
+
+- `import React, { useState, useEffect } from 'react'`
+
+```JSX
+useEffect(() => {
+  console.log('render')
+}, [name])
+```
+
+- `useEffect` is the hook
+- `useEffect(() => { console.log('render') }, [name])` is the function that will be executed when the component is rendered
+- `[name]` is the dependency array, if the state `name` changes, the function will be executed
+
 
 
 > Author
