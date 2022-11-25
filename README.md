@@ -140,6 +140,26 @@ const [state, dispatch] = useReducer(reducer, initialState)
 - `useReducer` is the hook
 - `useReducer(reducer, initialState)` is the reducer function and the initial value of the state
 
+## forms
+
+### useRef hook
+
+> useRef is a hook that allows you to add state to functional components
+>
+> Is used to get the value of an input
+
+- `import React, { useRef } from 'react'`
+
+```JSX
+const inputRef = useRef()
+```
+
+- `inputRef` is the state
+- `useRef` is the hook
+- `useRef()` is the initial value of the state
+
+
+
 ## Author
 
 [![Twitter](https://img.shields.io/twitter/follow/ralex_uy?style=social)](https://twitter.com/ralex_uy) <!-- twitter -->
