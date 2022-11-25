@@ -125,6 +125,21 @@ useEffect(() => {
 - if the dependency array is not empty, the function will be executed when the component is rendered and when the state in the dependency array changes
 - if more than one state is in the dependency array, the function will be executed when any of the states changes
 
+## reducer hook
+
+> reducer is a hook that allows you to add state to functional components
+
+- `import React, { useReducer } from 'react'`
+
+```JSX
+const [state, dispatch] = useReducer(reducer, initialState)
+```
+
+- `state` is the state
+- `dispatch` is the function that allows you to change the state
+- `useReducer` is the hook
+- `useReducer(reducer, initialState)` is the reducer function and the initial value of the state
+
 ## Author
 
 [![Twitter](https://img.shields.io/twitter/follow/ralex_uy?style=social)](https://twitter.com/ralex_uy) <!-- twitter -->
