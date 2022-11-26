@@ -183,6 +183,21 @@ const inputRef = useRef()
 
 - `npm install react-router-dom`
 
+## testing
+
+### resources for testing
+
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Enzyme](https://enzymejs.github.io/enzyme/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+
+### jest
+
+> Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+
+- Jest will run all the test in the project with `.test.js` or `.spec.js` extension
+
 ## Author
 
 [![Twitter](https://img.shields.io/twitter/follow/ralex_uy?style=social)](https://twitter.com/ralex_uy) <!-- twitter -->
