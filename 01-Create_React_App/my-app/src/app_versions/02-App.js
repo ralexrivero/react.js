@@ -17,20 +17,16 @@ function App () {
         <input
           value={title}
           onChange={(event) =>
-            setTitle(event.target.value)
-          }
+            setTitle(event.target.value)}
           type='text'
           placeholder='color title ...'
-        >
-        </input>
+        />
         <input
           value={color}
           type='color'
           onChange={(event) =>
-            setColor(event.target.value)
-          }
-          >
-        </input>
+            setColor(event.target.value)}
+        />
         <button>Add</button>
       </form>
     </div>

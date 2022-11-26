@@ -1,7 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 
-function useInput(initialValue) {
+function useInput (initialValue) {
   const [value, setValue] =
     useState(initialValue);
   return [
@@ -32,13 +32,11 @@ function App () {
           {...titleProps}
           type='text'
           placeholder='color title ...'
-        >
-        </input>
+        />
         <input
           {...colorProps}
           type='color'
-          >
-        </input>
+        />
         <button>Add</button>
       </form>
     </div>

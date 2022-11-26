@@ -13,11 +13,11 @@ query {
 
 const opts = {
   method: 'POST',
-  headers: {'Content-Type': 'application/json'},
-  body: JSON.stringify({query})
-}
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ query })
+};
 
-function Lift({ name, elevationGain, status }) {
+function Lift ({ name, elevationGain, status }) {
   return (
     <div>
       <h1>{name}</h1>
@@ -34,29 +34,28 @@ function App () {
   useEffect(() => {
     setLoading(true);
     fetch(
-      `http://snowtooth.moonhighway.com/`,
+      'http://snowtooth.moonhighway.com/',
       opts
     ).then((response) => response.json())
-    .then(setData)
-    .then(() => setLoading(false))
-    .catch(setError);
+      .then(setData)
+      .then(() => setLoading(false))
+      .catch(setError);
   }, []);
 
-if (loading) return <h1>Loading...</h1>;
-if (error)
-  return <pre>{JSON.stringify(error)}</pre>;
-if (!data) return null;
-return (
-  <div className='App'>
-    {data.data.allLifts.map((lift) => (
-      <Lift
-        name={lift.name}
-        elevationGain={lift.elevationGain}
-        status={lift.status}
-      />
-    ))}
-  </div>
-);
+  if (loading) return <h1>Loading...</h1>;
+  if (error) { return <pre>{JSON.stringify(error)}</pre>; }
+  if (!data) return null;
+  return (
+    <div className='App'>
+      {data.data.allLifts.map((lift) => (
+        <Lift
+          name={lift.name}
+          elevationGain={lift.elevationGain}
+          status={lift.status}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default App;
