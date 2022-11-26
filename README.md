@@ -16,7 +16,18 @@
 - `NPM 5.2+`
 - `babel`
 - `JSX syntax`
+- `react router`
 - `Firefox`
+
+## resources
+
+- [React.js](https://es.reactjs.org/)
+- [node.js](https://nodejs.org/es/)
+- [NPM](https://www.npmjs.com/)
+- [babel](https://babeljs.io/)
+- [JSX syntax](https://es.reactjs.org/docs/introducing-jsx.html)
+- [react router](https://reactrouter.com/)
+- [Firefox](https://www.mozilla.org/es-ES/firefox/new/)
 
 ## instalation
 
@@ -165,6 +176,12 @@ const inputRef = useRef()
 - [React Final Form](https://final-form.org/react)
 - [React Form](https://react-form.js.org/)
 - [Use Hook Form](https://usehooks.com/useForm/)
+
+## react router
+
+> React Router is a collection of navigational components that compose declaratively with your application. Whether you want to have bookmarkable URLs for your web app or a composable way to navigate in React Native, React Router works wherever React is rendering--so take your pick!
+
+- `npm install react-router-dom`
 
 ## Author
 
