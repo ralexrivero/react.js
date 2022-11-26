@@ -185,6 +185,8 @@ const inputRef = useRef()
 
 ## testing
 
+- `npm test`
+
 ### resources for testing
 
 - [Jest](https://jestjs.io/)
@@ -197,6 +199,10 @@ const inputRef = useRef()
 > Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 
 - Jest will run all the test in the project with `.test.js` or `.spec.js` extension
+
+### react testing library
+
+> The React Testing Library is a very light-weight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils, in a way that encourages better testing practices.
 
 ## Author
 
