@@ -1,8 +1,12 @@
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function Home () {
   return (
     <div>
+      <nav>
+        <Link to='/about'>About</Link>
+      </nav>
       <h1>Home page</h1>
     </div>
   );
@@ -25,9 +29,5 @@ export function Contact () {
 }
 
 export function App () {
-  return (
-    <h1>Hello</h1>
-  );
+  return <Home />;
 }
-
-export default App;
