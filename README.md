@@ -217,6 +217,72 @@ import { ICONNAME } from 'react-icons/bs
 
 - [react icons](https://react-icons.github.io/react-icons/)
 
+## Tailwind css
+
+- [Tailwind css](https://tailwindcss.com/docs/guides/create-react-app)
+
+- `npm install -D tailwindcss postcss autoprefixer`
+- `npm install -D @tailwindcss/forms`
+- `npx tailwindcss init -p`
+
+## install CRACO
+
+> Create React App Configuration Override
+
+- `npm install @craco/craco`
+
+- modify `package.json`
+
+```JSON
+"scripts": {
+  "start": "craco start",
+  "build": "craco build",
+  "test": "craco test"
+},
+```
+
+- create `craco.config.js`
+
+```JS
+module.exports = {
+    style: {
+        postcss: {
+            plugins: [
+                require('tailwindcss'),
+                require('autoprefixer'),
+            ],
+        },
+    },
+}
+```
+
+## config tailwind
+
+- create `tailwind.config.js`
+
+```JS
+module.exports = {
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [require('@tailwindcss/forms')],
+}
+```
+
+- modify the `index.css`
+
+```CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+
 ## Author
 
 [![Twitter](https://img.shields.io/twitter/follow/ralex_uy?style=social)](https://twitter.com/ralex_uy) <!-- twitter -->
