@@ -204,6 +204,19 @@ const inputRef = useRef()
 
 > The React Testing Library is a very light-weight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils, in a way that encourages better testing practices.
 
+## React icons
+
+- `npm install react-icons --save` install the react icons library as a dependency
+- usage
+
+```JSX
+import { ICONNAME } from 'react-icons/bs
+
+< ICONNAME />
+```
+
+- [react icons](https://react-icons.github.io/react-icons/)
+
 ## Author
 
 [![Twitter](https://img.shields.io/twitter/follow/ralex_uy?style=social)](https://twitter.com/ralex_uy) <!-- twitter -->

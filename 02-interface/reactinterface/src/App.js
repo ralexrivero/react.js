@@ -1,3 +1,5 @@
+import { BiTrash } from "react-icons/bi";
+
 function App() {
   return (
     <div className="App">
