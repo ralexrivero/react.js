@@ -282,7 +282,6 @@ module.exports = {
 @tailwind utilities;
 ```
 
-
 ## Author
 
 [![Twitter](https://img.shields.io/twitter/follow/ralex_uy?style=social)](https://twitter.com/ralex_uy) <!-- twitter -->
