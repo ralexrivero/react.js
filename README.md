@@ -282,6 +282,13 @@ module.exports = {
 @tailwind utilities;
 ```
 
+## bug fixes
+
+> postcss plugins not found
+
+- `find node_modules/ -name 'postcss-flexbugs-fixes'`
+- `npm install postcss-flexbugs-fixes postcss-normalize postcss-preset-env`
+
 ## Author
 
 [![Twitter](https://img.shields.io/twitter/follow/ralex_uy?style=social)](https://twitter.com/ralex_uy) <!-- twitter -->
