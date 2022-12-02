@@ -227,6 +227,7 @@ import { ICONNAME } from 'react-icons/bs
 
 ## install CRACO
 
+> try first run with react-script
 > Create React App Configuration Override
 
 - `npm install @craco/craco`
