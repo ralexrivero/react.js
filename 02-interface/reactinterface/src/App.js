@@ -4,6 +4,7 @@ import AddAppointment from './components/AddAppointment';
 import AppointmentInfo from './components/AppointmentInfo';
 import appointmentList from './data.json';
 
+
 function App () {
   return (
     <div className='App container mx-auto px-4 mt-3 font-thin'>
