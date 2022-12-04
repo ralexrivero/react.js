@@ -5,32 +5,47 @@ import AddAppointment from './components/AddAppointment';
 import AppointmentInfo from './components/AppointmentInfo';
 
 function App () {
+  const [appointmentList, setAppointmentList] = useState([]);
+  const [query, setQuery] = useState('');
 
-  let [appointmentList, setAppointmentList] = useState([]);
+  const filteredAppointments = appointmentList.filter(
+    item => {
+      return (
+        item.petName.toLowerCase().includes(query.toLowerCase()) ||
+        item.ownerName.toLowerCase().includes(query.toLowerCase()) ||
+        item.aptNotes.toLowerCase().includes(query.toLowerCase())
+      );
+    }
+  );
 
   const fetchData = useCallback(() => {
     fetch('./data.json')
-    .then(response => response.json())
-    .then(data => {
-      setAppointmentList(data)
-    });
-  }, [])
+      .then(response => response.json())
+      .then(data => {
+        setAppointmentList(data);
+      });
+  }, []);
 
   useEffect(() => {
-    fetchData()
+    fetchData();
   }, [fetchData]);
 
   return (
     <div className='App container mx-auto px-4 mt-3 font-thin'>
       <h1 className='text-5xl mb-3'>
-        <BiCalendar className='inline-block text-red-400 align-top' />Your Appointments</h1>
+        <BiCalendar className='inline-block text-red-400 align-top' />Your Appointments
+      </h1>
       <AddAppointment />
-      <Search />
+      <Search
+        query={query}
+        onQueryChange={myQuery => setQuery(myQuery)}
+      />
 
       <ul className='divide-y divide-gray-200'>
-        {appointmentList
+        {filteredAppointments
           .map(appointment => (
-            <AppointmentInfo key={appointment.id}
+            <AppointmentInfo
+              key={appointment.id}
               appointment={appointment}
               onDeleteAppointment={
                 appointmentId =>
