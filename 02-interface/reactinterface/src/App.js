@@ -22,9 +22,11 @@ function App () {
 
   return (
     <div className='App container mx-auto px-4 mt-3 font-thin'>
-      <h1 className='text-5xl mb-3'><BiCalendar className='inline-block text-red-400 align-top' />Your Appointments</h1>
+      <h1 className='text-5xl mb-3'>
+        <BiCalendar className='inline-block text-red-400 align-top' />Your Appointments</h1>
       <AddAppointment />
       <Search />
+
       <ul className='divide-y divide-gray-200'>
         {appointmentList
           .map(appointment => (
@@ -32,7 +34,7 @@ function App () {
               appointment={appointment}
               onDeleteAppointment={
                 appointmentId =>
-                  setAppointmentList(appointmentList.filter(appointment => appointment.id === appointmentId))
+                  setAppointmentList(appointmentList.filter(appointment => appointment.id !== appointmentId))
               }
             />
           ))}
