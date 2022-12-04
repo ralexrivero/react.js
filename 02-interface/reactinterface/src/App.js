@@ -19,7 +19,7 @@ function App () {
       );
     }
   ).sort((a, b) => {
-    let order = (orderBy === 'asc') ? 1 : -1;
+    const order = (orderBy === 'asc') ? 1 : -1;
     return (
       a[sortBy].toLowerCase() < b[sortBy].toLowerCase()
         ? -1 * order
@@ -48,6 +48,10 @@ function App () {
       <Search
         query={query}
         onQueryChange={myQuery => setQuery(myQuery)}
+        orderBy={orderBy}
+        onOrderByChange={mySort => setOrderBy(mySort)}
+        sortBy={sortBy}
+        onSortByChange={mySort => setSortBy(mySort)}
       />
 
       <ul className='divide-y divide-gray-200'>
