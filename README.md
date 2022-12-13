@@ -46,12 +46,21 @@ FROM node:18-alpine
 RUN npm install --location=global vim
 RUN npm install --location=global npm
 RUN npm install --location=global semistandard -y
-
 ```
 
 - `docker build -t node-alp:1.0 .`
 - `docker run -d -it --rm -p 3000:3000 -v /home/ralex/code:/code --user node --name node-alp-0 node-alp:1.0`
 - `docker exec -it --user root node-alp-0 sh`
+
+## Alternatives to React
+
+Since React is a library, and not a framework, this means that can be used with other JavaScript libraries.
+
+- [Lodash](https://lodash.com/) - utility library
+- [Luxon](https://moment.github.io/luxon/) - date and time library
+- [Redux](https://redux.js.org/) - state management library
+- [Axios](https://axios-http.com/) - HTTP client
+- [Jest](https://jestjs.io/) - testing library
 
 ### create React app
 
